@@ -2,7 +2,7 @@
 <HTML>
 <body>
   <h2>Form Validation</h2>
-  <form>
+  <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" > 
   <label for="fname">First name *:</label><br><br>
   <input type="text" id="fname" name="fname><br><br>
   <label for="lname">Last name *:</label><br>
@@ -17,6 +17,20 @@
     <input type="tel" id="cno" name="cno"><br><br>
   <input type="submit" value="submit">
     <p>All fields marked with * are required</p>
+<script>  
+function validateform(){  
+var name=document.myform.fname.value;  
+var password=document.myform.pwd.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
 </form>
 </body>
 </HTML>
