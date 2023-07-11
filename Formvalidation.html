@@ -3,19 +3,20 @@
 <body>
   <h2>Form Validation</h2>
   <form>
-  <label for="fname">First name:</label><br>
+  <label for="fname">First name *:</label><br>
   <input type="text" id="fname" name="fname required><br>
-  <label for="lname">Last name:</label><br>
+  <label for="lname">Last name *:</label><br>
   <input type="text" id="lname" name="lname" required><br><br>
     <input type="radio" name="gender" value="male"> Male
     <input type="radio" name="gender" value="female"> Female
      <label for="ename">Email:</label><br>
     <input type="email" id="ename" name="ename" required><br><br>
-   <label for="pwd">Password:</label><br> 
+   <label for="pwd">Password *:</label><br> 
     <input type="password" id="pwd" name="pwd" required><br><br>
-    <label for="cno">Contact No:</label><br> 
+    <label for="cno">Contact No *:</label><br> 
     <input type="tel" id="cno" name="cno"><br><br>
   <input type="submit" value="submit">
+    <p>All fields marked with * are required</p>
 </form>
 </body>
 </HTML>
