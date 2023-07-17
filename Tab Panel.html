@@ -3,24 +3,23 @@
 <html>
 <h1>creating Tab Panel</h1>
   <body>
-    <div class="tabs">
-        <span data-tab-value="#tab_1">Tab-1</span>
-        <span data-tab-value="#tab_2">Tab-2</span>
-        <span data-tab-value="#tab_3">Tab-3</span>
+    <div id="tablist" role="tablist" onkeydown="return handleArrowKeys(event);">
+    <span id="tab1" role="tab" >TAB 1</span>
+			<span id="tab2" role="tab" >TAB 2</span>
+			<span id="tab3" role="tab" >TAB 3</span>
     </div>
   
-    <div class="tab-content">
-        <div class="tabs__tab active" id="tab_1" data-tab-info>
-            <p>Welcome to my page.</p>
-  
-        </div>
-        <div class="tabs__tab" id="tab_2" data-tab-info>
-            <p>Hello Everyone.</p>
-  
-        </div>
-        <div class="tabs__tab" id="tab_3" data-tab-info>
-            <p>how are you.</p>
-  
-        </div>
-    </div>
-  
+   <div id="Tabcontent">
+			<div id="panel1" role="tabpanel">
+				Hello Everyone!
+			</div>
+
+			<div id="panel2" role="tabpanel" style="display: none;">
+				How are you?
+			</div>
+
+			<div id="panel3" role="tabpanel" style="display: none;">
+				 Great to meet you!
+			</div>
+		</div>
+
