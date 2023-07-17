@@ -22,4 +22,14 @@
 				 Great to meet you!
 			</div>
 		</div>
+	  <script>
+			document.getElementById("liveMessage").removeAttribute("style");
+			document.getElementById("liveMessage").innerHTML = "Press 'CTRL + 2' to toggal between Dark and Light Modes...";
+			setTimeout(function() {
+			document.getElementById('liveMessage').innerHTML = '';
+			document.getElementById("liveMessage").setAttribute("style", "display: none;");}, 3000);
+		</script>
+	</main>
+</body>
+</html>
 
