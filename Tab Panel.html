@@ -1,8 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
+	<h1>Accessible Tab panel</h1>
+		
+		<div id="tablist" role="tablist" onkeydown="return handleArrowKeys(event);">
+			<span id="tab1" role="tab">TAB 1</span>
+			<span id="tab2" role="tab">TAB 2</span>
+			<span id="tab3" role="tab">TAB 3</span>
+		</div>
 
-	
+	<div id="panels">
+			<div id="panel1" role="tabpanel" tabindex="0">
+				
+			</div>
+
+			<div id="panel2" role="tabpanel" tabindex="-1" style="display: none;">
+				
+			</div>
+
+			<div id="panel3" role="tabpanel" tabindex="-1" style="display: none;">
+				
+			</div>
+		</div>
 
 
 			
