@@ -46,9 +46,9 @@
    <div id="tab3" role="tab" aria-selected="true" tabindex="-1" onClick="JavaScript:selectTab(3);">Tab 3</div>
    </div>
    <br />
-   <div id="tab1Content">welcome</div>
-   <div id="tab2Content">hello everyone</div>
-   <div id="tab3Content">thanks for visiting</div>
+   <div id="tab1Content" role="tabpanel" tabindex="0">welcome</div>
+   <div id="tab2Content" role="tabpanel" tabindex="-1">hello everyone</div>
+   <div id="tab3Content" role="tabpanel" tabindex="-1">thanks for visiting</div>
    <script>
       function selectTab(tabIndex) {
          //Hide All Tabs
