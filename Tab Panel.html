@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First TAB Panel</title>
 </head>
 <body>
     <div class="tabs" onkeydown= return addEventListener("DOMContentLoaded", ()>
-  <div role="tablist" aria-label="Sample Tabs">
-    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0"> TAB 1</button>
-    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1"> TAB 2 </button>
-    <button id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1"> TAB 3 </button>
+  <div role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0"> HTML</button>
+    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1"> Javascript </button>
+    <button id="tab-3" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1"> CSS </button>
   </div>
   <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-    <p>Content for the first panel</p>
+    <p>welcome!<br> Learn about HTMl </p>
   </div>
   <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
-    <p>Content for the second panel</p>
+    <p>welcome!<br> Learn about Javascript</p>
   </div>
   <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
-    <p>Content for the third panel</p>
+    <p>welcome!<br> Learn about CSS</p>
   </div>
 </div>
 <script>
