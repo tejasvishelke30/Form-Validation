@@ -4,8 +4,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Tab using javascript</title>
-   <!-- style of the tab-->
+   <title>My First tab Panel</title>
    <style>
       #tab1,
       #tab2,
@@ -41,15 +40,15 @@
    </style>
 </head>
 <body>
-   <!-- HTML Of the Tab -->
-   <div id="tab1" onClick="JavaScript:selectTab(1);">Tab 1</div>
+   <div id="tablist" role="tablist">
+<div id="tab1" onClick="JavaScript:selectTab(1);">Tab 1</div>
    <div id="tab2" onClick="JavaScript:selectTab(2);">Tab 2</div>
    <div id="tab3" onClick="JavaScript:selectTab(3);">Tab 3</div>
+   </div>
    <br />
-   <div id="tab1Content">This is first tab.</div>
-   <div id="tab2Content">This is Second tab</div>
-   <div id="tab3Content">This is third tab</div>
-   <!-- Javascript Code of the tab -->
+   <div id="tab1Content">welcome</div>
+   <div id="tab2Content">hello everyone</div>
+   <div id="tab3Content">thanks for visiting</div>
    <script>
       function selectTab(tabIndex) {
          //Hide All Tabs
