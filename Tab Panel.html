@@ -41,9 +41,9 @@
 </head>
 <body>
    <div id="tablist" role="tablist">
-<div id="tab1" onClick="JavaScript:selectTab(1);">Tab 1</div>
-   <div id="tab2" onClick="JavaScript:selectTab(2);">Tab 2</div>
-   <div id="tab3" onClick="JavaScript:selectTab(3);">Tab 3</div>
+<div id="tab1" role="tab" aria-selected="true" tabindex="0" onClick="JavaScript:selectTab(1);">Tab 1</div>
+   <div id="tab2" role="tab" aria-selected="true" tabindex="-1" onClick="JavaScript:selectTab(2);">Tab 2</div>
+   <div id="tab3" role="tab" aria-selected="true" tabindex="-1" onClick="JavaScript:selectTab(3);">Tab 3</div>
    </div>
    <br />
    <div id="tab1Content">welcome</div>
