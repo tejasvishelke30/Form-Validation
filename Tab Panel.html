@@ -13,6 +13,18 @@
    <div id="tab1Content">This is first tab.</div>
    <div id="tab2Content">This is Second tab</div>
    <div id="tab3Content">This is third tab</div>
+
+    <script>
+     function selectTab(tabIndex) {
+       //Hide All Tabs
+       document.getElementById("tab1Content").style.display = "none";
+       document.getElementById("tab2Content").style.display = "none";
+       document.getElementById("tab3Content").style.display = "none";
+       //Show the Selected Tab
+       document.getElementById("tab" + tabIndex + "Content").style.display =
+       "block";
+     }
+   </script>
     
 </body>
 </html>
