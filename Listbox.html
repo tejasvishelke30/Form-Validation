@@ -29,14 +29,14 @@
   let taboptionfocus = 0;
   listbox.addEventListener("keydown", (e) => {
     
-    if (e.key === "Arrowup" || e.key === "Arrowdown") {
+    if (e.key === "ArrowUp" || e.key === "ArrowDown") {
       options[optionFocus].setAttribute("tabindex", -1);
-      if (e.key === "Arrowdown") {
+      if (e.key === "ArrowDown") {
         optionFocus++;
     if (optionFocus >= options.length) {
           optionFocus = 0;
         }
-      } else if (e.key === "Arrowup") {
+      } else if (e.key === "ArrowUp") {
         optionFocus--;
         if (optionFocus < 0) {
           optionFocus = options.length - 1;
