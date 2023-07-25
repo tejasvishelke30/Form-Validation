@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Listbox</title>
 </head>
 <body>
    <p id="listbox1label" role="label">Select a color:</p>
@@ -12,7 +12,7 @@
   tabindex="0"
   id="listbox1"
   aria-labelledby="listbox1label"
-  onkeydown="return window.addEventListener("DOMContentLoaded", ()">
+  >
   <div role="option" id="listbox1-1" class="selected" aria-selected="true">
     Green
   </div>
@@ -23,10 +23,9 @@
   <div role="option" id="listbox1-6">Periwinkle</div>
 </div>
 <script>
-    <script>
     window.addEventListener("DOMContentLoaded", () => {
   const options = document.querySelectorAll('[role="option"]');
-  const Listbox = document.querySelector('[role="listbox"]');
+  const listbox = document.querySelector('[role="listbox"]');
   let taboptionfocus = 0;
   listbox.addEventListener("keydown", (e) => {
     
