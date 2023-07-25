@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="listbox1label" role="label">Select a color:</p>
+    <div
+      role="listbox"
+      tabindex="0"
+      id="listbox1"
+      aria-labelledby="listbox1label"
+      onclick="return listItemClick(event);"
+      onkeydown="return listItemKeyEvent(event);"
+      onkeypress="return listItemKeyEvent(event);"
+      aria-activedescendant="listbox1-1">
+      <div role="option" id="listbox1-1" class="selected" aria-selected="true">
+        Green
+      </div>
+      <div role="option" id="listbox1-2">Orange</div>
+      <div role="option" id="listbox1-3">Red</div>
+      <div role="option" id="listbox1-4">Blue</div>
+      <div role="option" id="listbox1-5">Violet</div>
+      <div role="option" id="listbox1-6">Periwinkle</div>
+    </div>    
+
+</body>
+</html>
