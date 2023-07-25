@@ -12,10 +12,7 @@
   tabindex="0"
   id="listbox1"
   aria-labelledby="listbox1label"
-  onclick="return listItemClick(event);"
-  onkeydown="return listItemKeyEvent(event);"
-  onkeypress="return listItemKeyEvent(event);"
-  aria-activedescendant="listbox1-1">
+  onkeydown="return window.addEventListener("DOMContentLoaded", ()">
   <div role="option" id="listbox1-1" class="selected" aria-selected="true">
     Green
   </div>
@@ -25,7 +22,33 @@
   <div role="option" id="listbox1-5">Violet</div>
   <div role="option" id="listbox1-6">Periwinkle</div>
 </div>
-
+<script>
+    <script>
+    window.addEventListener("DOMContentLoaded", () => {
+  const options = document.querySelectorAll('[role="option"]');
+  const Listbox = document.querySelector('[role="listbox"]');
+  let taboptionfocus = 0;
+  listbox.addEventListener("keydown", (e) => {
+    
+    if (e.key === "Arrowup" || e.key === "Arrowdown") {
+      options[optionFocus].setAttribute("tabindex", -1);
+      if (e.key === "Arrowdown") {
+        optionFocus++;
+    if (optionFocus >= options.length) {
+          optionFocus = 0;
+        }
+      } else if (e.key === "Arrowup") {
+        optionFocus--;
+        if (optionFocus < 0) {
+          optionFocus = options.length - 1;
+        }
+      }
+        options[optionFocus].setAttribute("tabindex", 0);
+      options[optionFocus].focus();
+    }
+  });
+});
+</script>
 
 </body>
 </html>
