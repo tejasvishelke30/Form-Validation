@@ -37,6 +37,9 @@
     window.addEventListener("DOMContentLoaded", () => {
   const options = document.querySelectorAll('[role="option"]');
   const listbox = document.querySelector('[role="listbox"]');
+             options.forEach((option) => {
+    option.addEventListener("click", changeoptions);
+  });
         
   let optionFocus = 0;
   listbox.addEventListener("keydown", (e) => {
