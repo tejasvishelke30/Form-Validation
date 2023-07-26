@@ -1,13 +1,8 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
- 
-
- 
-
-    
-<meta charset="UTF-8">
+ <meta charset="UTF-8">
 <meta name="viewport" content="width=, initial-scale=1.0">
 <title>Listbox</title>
 
@@ -41,6 +36,13 @@ color: white;
   const listbox = document.querySelector('[role="listbox"]');
              let optionFocus = 0;
   listbox.addEventListener("keydown", (e) => {
+
+
+    if (e.key === "Enter") {
+
+      selectOption(e);
+
+    }
 
     if (e.key === "ArrowUp" || e.key === "ArrowDown") {
       options[optionFocus].setAttribute("tabindex", -1);
