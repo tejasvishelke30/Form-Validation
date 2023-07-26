@@ -52,6 +52,20 @@
     }
   });
 });
+    options.forEach((option) => {
+    option.addEventListener("click", selectOption);
+  });
+
+ 
+
+function selectOption(event) {
+    for (let i=0; i<options.length; i++) {
+        options[i].classList.remove("selected");
+        options[i].setAttribute("aria-selected", "false");
+    }
+    event.target.classList.add("selected");
+    event.target.setAttribute("aria-selected", "true");
+}
 </script>
 
 </body>
