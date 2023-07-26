@@ -1,36 +1,39 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
 
-<style>
-    .selected {
-        background-color: black;
-    color: white;
-    }
-</style>
+ 
+
+ 
 
     
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Listbox</title>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=, initial-scale=1.0">
+<title>Listbox</title>
+
+<style>
+.selected {
+background-color: black;
+color: white;
+}
+</style>
 </head>
 <body>
-   <p id="listbox1label" role="label">Select a color:</p>
+<p id="listbox1label" role="label">Select a color:</p>
 <div
   role="listbox"
   tabindex="0"
   id="listbox1"
   aria-labelledby="listbox1label"
-  >
-  <div role="option" id="listbox1-1" class="selected" aria-selected="true">
+>
+<div role="option" id="listbox1-1" class="selected" aria-selected="true">
     Green
-  </div>
-  <div role="option" id="listbox1-2">Orange</div>
-  <div role="option" id="listbox1-3">Red</div>
-  <div role="option" id="listbox1-4">Blue</div>
-  <div role="option" id="listbox1-5">Violet</div>
-  <div role="option" id="listbox1-6">Periwinkle</div>
+</div>
+<div role="option" id="listbox1-2">Orange</div>
+<div role="option" id="listbox1-3">Red</div>
+<div role="option" id="listbox1-4">Blue</div>
+<div role="option" id="listbox1-5">Violet</div>
+<div role="option" id="listbox1-6">Periwinkle</div>
 </div>
 <script>
     window.addEventListener("DOMContentLoaded", () => {
@@ -38,7 +41,7 @@
   const listbox = document.querySelector('[role="listbox"]');
              let optionFocus = 0;
   listbox.addEventListener("keydown", (e) => {
-    
+
     if (e.key === "ArrowUp" || e.key === "ArrowDown") {
       options[optionFocus].setAttribute("tabindex", -1);
       if (e.key === "ArrowDown") {
@@ -56,8 +59,7 @@
       options[optionFocus].focus();
     }
   });
-});
-    options.forEach((option) => {
+  options.forEach((option) => {
     option.addEventListener("click", selectOption);
   });
 
@@ -71,7 +73,11 @@ function selectOption(event) {
     event.target.classList.add("selected");
     event.target.setAttribute("aria-selected", "true");
 }
+});
 </script>
+
+ 
 
 </body>
 </html>
+
